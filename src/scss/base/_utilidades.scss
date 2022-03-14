@@ -1,0 +1,34 @@
+
+
+.item{
+    gap: 1.5rem;
+    justify-content: space-between;
+    &__html{
+        color: rgb(61, 182, 149);
+        font-weight: 600;
+    }
+    &__css{
+        color: rgb(96, 255, 96);
+        font-weight: 600;
+    }
+    &__sass{
+        color: rgb(239, 250, 87);
+        font-weight: 600;
+    }
+    &__js{
+        color: rgb(246, 132, 218);
+        font-weight: 600;
+    }
+    &__bootstrap{
+        color: rgb(253, 167, 7);
+        font-weight: 600;
+    }
+}
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.border{
+    border-radius: 1rem;
+}

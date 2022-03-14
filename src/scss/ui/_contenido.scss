@@ -1,0 +1,48 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-mi{
+    &__imagen{
+        transition-property: transform;
+        transition-duration: 300ms;
+        &:hover{
+            transform: rotate(5deg);
+        }
+    }
+}
+
+.servicio{
+    transition-property: transform;
+    transition-duration: 300ms;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.proyectos{
+    &__card{
+        min-height: 60rem;
+        @include m.desktopXL{ 
+            min-height: 68rem;       
+        }
+    }
+    &__imagen{
+        transition-property: transform;
+        transition-duration: 400ms;
+        &:hover{
+            transform: scale(.9);
+        }
+    @include m.telefono { 
+        margin: auto;
+        }
+    }
+    &__descripcion{
+        @include m.tablet { 
+            max-width: 85%;
+            margin: auto;
+        }
+        @include m.desktop { 
+            max-width: 100%;
+        }
+    }
+}
